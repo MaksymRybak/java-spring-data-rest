@@ -75,6 +75,13 @@ public class ModelRepository {
 	public List<Model> getModelsByType(String modelType) {
 		return modelJpaRepository.findAllModelsByType(modelType);
 	}
+	
+	/**
+	 * Custom finder
+	 */
+	public List<Model> getModelsByName(String name) {
+		return modelJpaRepository.findAllModelsByName(name);
+	}
 
 	/**
 	 * Count
